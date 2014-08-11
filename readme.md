@@ -22,7 +22,7 @@ It might seem silly to have "future plans" for a trivial program like this, but 
 1. Find and use a robust command line parsing library
 2. Figure out why node REPL has assert but it's not available in node proper, even with require('assert').
 3. Add asserts!
-4. Play with branches to implement, say, a linear, looping implementation.
+4. Play with branches to implement, say, a linear, looping implementation on a 'linear' branch.
 5. Improve the build process with, for example, jslint and the Google closure tools. (Research what the best practices are.)
 6. Add a test suite (perhaps multiples, using branches.)
 7. Publish this to the npm registry, and use it in another program.
@@ -30,3 +30,4 @@ It might seem silly to have "future plans" for a trivial program like this, but 
 9. Push to git.
 10. Figure out how to simulate multiple users to explore git conflicts.
 11. Figure out how to publish a site on github pages (and how that works, in general.)
+12. Research and install some local markdown editing and preview tools (browser or subl based)
