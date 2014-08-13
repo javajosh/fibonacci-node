@@ -7,4 +7,8 @@ function fib(n){
 //The command line interface to the function
 var arg = process.argv[2];
 var n = parseInt(arg);
+if (n < 0) throw 'argument must be positive: ' + n;
+if (n > 40) throw 'argument must be less than 40 because this is very inefficient code: ' + n;
+
+//Everything's good: let's do it
 console.log('Fibonacci number:', n, fib(n));
