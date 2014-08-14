@@ -4,8 +4,11 @@ function fib(n){
 	return fib(n-1) + fib(n-2);
 }
 
+var argv = require('minimist')(process.argv.slice(2));
+console.dir(argv);
+
 //The command line interface to the function
-var arg = process.argv[2];
+var arg = argv._;
 var n = parseInt(arg);
 if (n < 0) throw 'argument must be positive: ' + n;
 if (n > 40) throw 'argument must be less than 40 because this is very inefficient code: ' + n;
