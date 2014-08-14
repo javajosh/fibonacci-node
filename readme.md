@@ -9,12 +9,17 @@ This is a simple project who's sole purpose is to explore building basic node co
 4. github - using it as a remote, and github pages.
 5. markdown!
  
-# Usage
+### Usage
 ```
 node index.js <fibonnaci>
 ```
 
 Note that the recursive code is slow and resource intensive, and perceptible delay begins around 30, and becomes actively slow around 40 on my machine. The `linear` branch is incredibly faster.
+
+### Testing
+```
+npm test
+```
 
 
 Notes
@@ -45,7 +50,7 @@ The go to resource for Git seems to be the [SCM Book][]. It's a bit long, though
 
 I had a bit of an "aha!" moment about `npm` and it's relationship to `require()`. Basically, npm is a tool who's primary responsibility is to get the bits on your machine. In the simplest case, you can add a module to your project in `node-modules`. Then, to use those newly downloaded bits, you `require('module')`, which looks in node-modules. Everything else is a variation on this basic pattern: "global" installs download the bits into a different location; using `npm install` installs modules from the meta-data in `package.json`. This explains why there seems to a bit of a controversy about whether or not to put `node_modules` into source control: there are pros and cons, particularly if a) you're modifying your dependancies locally, or b) have a deployment process that *shouldn't* depend on the public internet. Another important variation is when npm is used to install *command-line tools* rather than (or in addition to) simple libraries.
 
-JavaScript compiling. The most important tool, right now, is a linter. There are lots of tools floating around, the three I know about being [jslint][JSHint], [jshint][JSHint], and [StackOverflow JSHint vs JSLint][]. I liked the sound of jshint, and the [JSHint install][] included links to editor plugins, and that's great.
+JavaScript compiling. The most important tool, right now, is a linter. There are lots of tools floating around, the three I know about being [jslint][JSHint], [jshint][JSHint], and [StackOverflow JSHint vs JSLint][]. I liked the sound of jshint, and the [JSHint install][] included links to editor plugins, and that's great. Once you install it (I chose to install it globally) you just run `jshint <file>` and you're done. 
 
 [JSHint]: http://www.jshint.com/
 [JSHint install]: http://www.jshint.com/install/
