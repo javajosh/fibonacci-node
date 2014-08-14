@@ -1,9 +1,16 @@
 var assert = require('assert');
 
-//Calculate the nth fibonacci number
+//Calculate the nth fibonacci number, linearly
 function fib(n){
-	if (n === 0 || n === 1) return n;
-	return fib(n-1) + fib(n-2);
+	var n1 = 0;
+	var n2 = 1;
+	var r = 1;
+	for (var i = 0; i < n; i++){
+		r = n1 + n2;
+		n2 = n1;
+		n1 = r;
+	}
+	return r
 }
 
 //The command line interface to the function
