@@ -1,0 +1,16 @@
+{
+  "name": "node-fib",
+  "version": "0.0.0",
+  "description": "a simple project who's sole purpose is to explore building basic node command-line applications",
+  "main": "index.js",
+  "dependencies": {
+    "jshint": "^2.5.3",
+    "minimist": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jshint index.js"
+  },
+  "author": "Josh Rehman",
+  "license": "BSD"
+}
