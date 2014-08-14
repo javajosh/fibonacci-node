@@ -1,3 +1,5 @@
+var assert = require('assert');
+
 //Calculate the nth fibonacci number
 function fib(n){
 	if (n === 0 || n === 1) return n;
@@ -7,8 +9,8 @@ function fib(n){
 //The command line interface to the function
 var arg = process.argv[2];
 var n = parseInt(arg);
-if (n < 0) throw 'argument must be positive: ' + n;
-if (n > 40) throw 'argument must be less than 40 because this is very inefficient code: ' + n;
+assert( n > 0, 'argument must be positive');
+assert( n < 40, 'argument must be less than 40 because this is very inefficient code!');
 
 //Everything's good: let's do it
 console.log('Fibonacci number:', n, fib(n));

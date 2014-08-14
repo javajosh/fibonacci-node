@@ -19,9 +19,9 @@ Note that the recursive code is slow and resource intensive, and perceptible del
 
 It might seem silly to have "future plans" for a trivial program like this, but I do!
 
-1. Find and use a robust command line parsing library
-2. Figure out why node REPL has assert but it's not available in node proper, even with require('assert').
-3. Add asserts!
+1. ~~Find and use a robust command line parsing library~~ (Used [Minimist](https://www.npmjs.org/package/minimist) on branch `minimist`)
+2. ~~Figure out why node REPL has assert but it's not available in node proper, even with require('assert').~~ (This was dumb: require assert worked fine when I tried it a second time! See [node docs on assert](http://nodejs.org/api/assert.html))
+3. ~~Add asserts!~~ (Gratuitous and arguably a lot worse than the non assert version!)
 4. Play with branches to implement, say, a linear, looping implementation on a 'linear' branch.
 5. Improve the build process with, for example, jslint and the Google closure tools. (Research what the best practices are.)
 6. Add a test suite (perhaps multiples, using branches.)
