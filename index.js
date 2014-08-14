@@ -10,7 +10,7 @@ function fib(n){
 		n2 = n1;
 		n1 = r;
 	}
-	return r
+	return r;
 }
 
 //The command line interface to the function
