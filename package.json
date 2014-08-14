@@ -4,12 +4,15 @@
   "description": "a simple project who's sole purpose is to explore building basic node command-line applications",
   "main": "index.js",
   "dependencies": {
-    "jshint": "^2.5.3",
     "minimist": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jshint": "^2.5.3",
+  },
   "scripts": {
-    "test": "jshint index.js"
+    "lint": "jshint index.js",
+    "test": "node test.js",
+    "run": "node cmd.js"
   },
   "author": "Josh Rehman",
   "license": "BSD"
