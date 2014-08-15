@@ -7,11 +7,12 @@
     "minimist": "^1.1.0"
   },
   "devDependencies": {
-    "jshint": "^2.5.3",
+    "jest-cli": "^0.1.18",
+    "jshint": "^2.5.3"
   },
   "scripts": {
     "lint": "jshint index.js",
-    "test": "node test.js",
+    "test": "jest",
     "run": "node cmd.js"
   },
   "author": "Josh Rehman",
