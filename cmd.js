@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fib = require('./');
 var assert = require('assert');
 

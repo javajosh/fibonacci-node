@@ -7,8 +7,12 @@
     "minimist": "^1.1.0"
   },
   "devDependencies": {
-    "jshint": "^2.5.3",
+    "jshint": "^2.5.3" 
   },
+  "bin":{
+    "node-fib":"./cmd.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "lint": "jshint index.js",
     "test": "node test.js",

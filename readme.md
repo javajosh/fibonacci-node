@@ -29,6 +29,8 @@ The built in node REPL (accessed by just running `node`) is quite handy for inte
 ### Markdown
 For Markdown, I found a lot of resources, especially the ["Markdown Preview" plugin for Sublime Text](https://github.com/revolunet/sublimetext-markdown-preview). That actually comes with a cheatsheet, but I also like [this Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), too. I really like markdown! There's a bit of a learning curve though, but with the right BTD loop (read: preview tool), it's easy enough to make mistakes and correct them (e.g. getting the link syntax right, and weird spacing rules for bulleted lists.)
 
+Note that, as the size of this `readme.md` increases in size, preview becomes slower, and actually crashed Sublime. The workaround is a restart, but clearly this software needs some love.
+
 ### Git
 The go to resource for Git seems to be the [SCM Book][]. It's a bit long, though, and not very interactive. One of these days I'd like to write a better git tutorial! Here are some other git links I've collected over time:
 
@@ -40,6 +42,8 @@ The go to resource for Git seems to be the [SCM Book][]. It's a bit long, though
  - [Git magic][]
  - [Codeschool Git][]
  - [SO merge advice][]
+
+ Ran into my first git problem on this project! I had thought I was working on `master` for a bunch of changes, but was on `linear` the whole time. I decided to just merge linear into master (which nuked the recursive fib) and then manually revert the function to it's recursive counterpart, using `gitk` to grab the content of the old `index.js`. I have *no doubt* there is a better, faster way to do this, but just *having* a way to do it is okay by me.
 
 [Github Flow]: http://scottchacon.com/2011/08/31/github-flow.html
 [Git Tower]: http://www.git-tower.com/
@@ -67,10 +71,13 @@ JavaScript compiling. The most important tool, right now, to me, is a linter. In
 
 
 ### Testing
-Testing in the JavaScript world is, frankly, a confusing mess. There's mocha, jasmine, qunit, tap, jest, and perhaps another 40 projects that I haven't heard of. I've used several testing libraries in Java and Groovy, most recently got in pretty deep with [Spock][], although Junit is a perennial favorite. For this project, I decided to just roll my own test script using asserts. I have my eye open for a testing library.
+Testing in the JavaScript world is, frankly, a confusing mess. There's mocha, jasmine, qunit, tap, jest, and perhaps another 40 projects that I haven't heard of. I've used several testing libraries in Java and Groovy, most recently got in pretty deep with [Spock][], although Junit is a perennial favorite. For this project, I decided to just roll my own test script using asserts. I have my eye open for a testing library. (Note: I wrote a trivial test in [Facebook Jest][] on branch `jest`.)
 
 [Facebook Jest]: https://github.com/facebook/jest
 [Spock]: https://code.google.com/p/spock/
+
+### Github
+Okay, so now that I have a reasonable project
 
 
 Future plans
@@ -86,8 +93,9 @@ It might seem silly to have "future plans" for a trivial program like this, but 
 6. ~~Add a test suite (perhaps multiples, using branches.)~~ (Added a simple script called test.js)
 7. Publish this to the npm registry, and use it in another program.
 8. Unpublish from the npm registry, because crap like this is noise.
-9. Push to git.
+9. Push to github.
 10. Figure out how to simulate multiple users to explore git conflicts.
 11. Figure out how to publish a site on github pages (and how that works, in general.)
 12. ~~Research and install some local markdown editing and preview tools (browser or subl based)~~
+13. How does npm install global CLI tools? Or does it?
 
