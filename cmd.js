@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
 var fib = require('./');
-var assert = require('assert');
 
 //The command line interface to the function
 var arg = process.argv[2];

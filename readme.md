@@ -73,6 +73,8 @@ JavaScript compiling. The most important tool, right now, to me, is a linter. In
 ### Testing
 Testing in the JavaScript world is, frankly, a confusing mess. There's mocha, jasmine, qunit, tap, jest, and perhaps another 40 projects that I haven't heard of. I've used several testing libraries in Java and Groovy, most recently got in pretty deep with [Spock][], although Junit is a perennial favorite. For this project, I decided to just roll my own test script using asserts. I have my eye open for a testing library. (Note: I wrote a trivial test in [Facebook Jest][] on branch `jest`.)
 
+
+
 [Facebook Jest]: https://github.com/facebook/jest
 [Spock]: https://code.google.com/p/spock/
 
